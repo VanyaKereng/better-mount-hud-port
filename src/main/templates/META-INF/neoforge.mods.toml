@@ -1,0 +1,47 @@
+
+license="${mod_license}"
+
+[[mods]]
+
+modId="${mod_id}"
+
+version="${mod_version}"
+
+displayName="${mod_name}"
+
+authors="VanyaKereng (NeoForge port), Lortseam (original mod)"
+
+
+iconFile="assets/bettermounthudport/icon.png"
+
+description='''
+This client-side mod improves the ingame HUD while riding a horse, donkey or other mount.
+
+* Both your food and the health of your mount is displayed at the same time
+* The experience bar only gets replaced with the jump bar while actually jumping
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+
+
+[[dependencies.${mod_id}]]
+
+    modId="neoforge"
+
+    type="required"
+
+    versionRange="[${neo_version},)"
+
+    ordering="NONE"
+
+    side="CLIENT"
+
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"
